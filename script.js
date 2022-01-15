@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
   document.getElementById('inputNumber').addEventListener('keydown', function (event) {
-    if (event.code == 'Enter') {
+    if (event.code == 'Enter' || event.key == 'Enter') {
       verifyNumber();
       document.getElementById('inputNumber').value = '';
     }
